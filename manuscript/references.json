@@ -1,0 +1,330 @@
+{
+  "accessed": "2026-11-05",
+  "references": [
+    {
+      "id": "A344611",
+      "url": "https://oeis.org/A344611",
+      "revision_record": "#27 May 17 2026 17:23:31",
+      "title": "Number of integer partitions of 2*n with reverse-alternating sum >= 0.",
+      "author_record": "_Gus Wiseman_, May 30 2021",
+      "locators": [
+        "A344611 revision 27, FORMULA comparison",
+        "A344611 FORMULA convolution",
+        "A344611/A344607 conjugate identities",
+        "A344611 CROSSREFS odd bisection",
+        "A344607/A344611 ordered versions"
+      ],
+      "source_blob_sha": "07190854dad39aeaec4587c6153eaec6d1a0abc3",
+      "source_sha256": "f86d69e7f4a347b1e5b1468019e58f057c4cfd66b58e5bc86a3bd5e39ed33ea6",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/07190854dad39aeaec4587c6153eaec6d1a0abc3"
+    },
+    {
+      "id": "A160786",
+      "url": "https://oeis.org/A160786",
+      "revision_record": "#25 Apr 08 2021 08:23:22",
+      "title": "The number of odd partitions of consecutive odd integers.",
+      "author_record": "Utpal Sarkar (doetoe(AT)gmail.com), May 26 2009",
+      "locators": [
+        "NAME and FORMULA"
+      ],
+      "source_blob_sha": "bc07ade019d71b5ff28e614f4471a8c8e65ad01e",
+      "source_sha256": "b04cfcc78b5c2fab6fe242aea25384200c0f74c016d644074af43b05084cdb29",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/bc07ade019d71b5ff28e614f4471a8c8e65ad01e"
+    },
+    {
+      "id": "A027193",
+      "url": "https://oeis.org/A027193",
+      "revision_record": "#78 May 30 2026 16:39:58",
+      "title": "Number of partitions of n into an odd number of parts.",
+      "author_record": "_Clark Kimberling_",
+      "locators": [
+        "NAME and FORMULA"
+      ],
+      "source_blob_sha": "6229a9a6011e63455e8fc7f73953aa3b1ba51711",
+      "source_sha256": "02e6aa172934d4b1f6714256367483c04c039ae4333868bfb2a1c11f7b668f94",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/6229a9a6011e63455e8fc7f73953aa3b1ba51711"
+    },
+    {
+      "id": "A027187",
+      "url": "https://oeis.org/A027187",
+      "revision_record": "#99 May 30 2026 16:39:58",
+      "title": "Number of partitions of n into an even number of parts.",
+      "author_record": "_Clark Kimberling_",
+      "locators": [
+        "NAME and FORMULA"
+      ],
+      "source_blob_sha": "9dcadaeeb76a500604170373421321c68f902e2a",
+      "source_sha256": "a417ec07cbf124bc8b50fc2b0ac27bc30c6792171caa83d03d062e43ec07a7a5",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/9dcadaeeb76a500604170373421321c68f902e2a"
+    },
+    {
+      "id": "A000041",
+      "url": "https://oeis.org/A000041",
+      "revision_record": "M0663 N0244 #1245 Sep 29 2026 11:35:17",
+      "title": "a(n) is the number of partitions of n (the partition numbers).",
+      "author_record": "_N. J. A. Sloane_",
+      "locators": [
+        "NAME and FORMULA"
+      ],
+      "source_blob_sha": "1c64f86c27899726141de2891d2aceed49d63471",
+      "source_sha256": "bc2cbb458665289030419f7e8b7a82adf7245f82db63d9d1ab341ca65ac06b1d",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/1c64f86c27899726141de2891d2aceed49d63471"
+    },
+    {
+      "id": "A344743",
+      "url": "https://oeis.org/A344743",
+      "revision_record": "#10 Jun 12 2021 06:04:57",
+      "title": "Number of integer partitions of 2n with reverse-alternating sum < 0.",
+      "author_record": "_Gus Wiseman_, Jun 09 2021",
+      "locators": [
+        "A344743 revision 10, COMMENTS"
+      ],
+      "source_blob_sha": "624d4898d54d72129818101115b22d8cc4ea3bcd",
+      "source_sha256": "d40e35086e0ddd4828f576340766a40cf6afd8b7ab08a081de1bf4ad21acfd83",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/624d4898d54d72129818101115b22d8cc4ea3bcd"
+    },
+    {
+      "id": "A236914",
+      "url": "https://oeis.org/A236914",
+      "revision_record": "#23 Jan 12 2020 23:57:09",
+      "title": "Number of partitions of 2n+1 of type OO (see Comments).",
+      "author_record": "_Clark Kimberling_, Feb 01 2014",
+      "locators": [
+        "NAME and FORMULA"
+      ],
+      "source_blob_sha": "335e448c498dbb342cf7fe068b00df8e1e5d97aa",
+      "source_sha256": "b7e3a3ee1d56da2176af8075384a8e42d43a07c07f5c9ef8c284d9500e830835",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/335e448c498dbb342cf7fe068b00df8e1e5d97aa"
+    },
+    {
+      "id": "A344650",
+      "url": "https://oeis.org/A344650",
+      "revision_record": "#16 Jul 22 2026 19:45:18",
+      "title": "Number of strict odd-length integer partitions of 2n.",
+      "author_record": "_Gus Wiseman_, Jun 05 2021",
+      "locators": [
+        "A344650 generating functions"
+      ],
+      "source_blob_sha": "c8df84cff9ade338898baf9b66f86c07691df53d",
+      "source_sha256": "92dca43b76d57a4024c17507254346801c0fa20fe8aac64c18c605e49e25ec14",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/c8df84cff9ade338898baf9b66f86c07691df53d"
+    },
+    {
+      "id": "A344607",
+      "url": "https://oeis.org/A344607",
+      "revision_record": "#26 Jun 09 2021 06:22:18",
+      "title": "Number of integer partitions of n with reverse-alternating sum >= 0.",
+      "author_record": "_Gus Wiseman_, May 29 2021",
+      "locators": [
+        "A344607 revision 26, COMMENTS monotonicity",
+        "A344611/A344607 conjugate identities",
+        "A344607/A344611 ordered versions"
+      ],
+      "source_blob_sha": "43174961c1c2ba36bc25018ec8763975f00d145f",
+      "source_sha256": "633bdcbeb52c47f77d51a69268ece15e0c1e102f7e7a72f4e3f73eb3feca9626",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/43174961c1c2ba36bc25018ec8763975f00d145f"
+    },
+    {
+      "id": "A344608",
+      "url": "https://oeis.org/A344608",
+      "revision_record": "#16 Jun 09 2021 06:22:38",
+      "title": "Number of integer partitions of n with reverse-alternating sum < 0.",
+      "author_record": "_Gus Wiseman_, May 30 2021",
+      "locators": [
+        "A344608 revision 16, COMMENTS monotonicity",
+        "A344608 COMMENTS odd-weight index and conjugate description",
+        "A344608 CROSSREFS distinct-part case",
+        "A344608 ordered version"
+      ],
+      "source_blob_sha": "9fd4eaeb8af1bc893671182552ab7451c8f63507",
+      "source_sha256": "16106c62bfc38697ba693dbb92f59019bff116bca25c2d120641711f26d24763",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/9fd4eaeb8af1bc893671182552ab7451c8f63507"
+    },
+    {
+      "id": "A067659",
+      "url": "https://oeis.org/A067659",
+      "revision_record": "#67 Nov 01 2026 16:49:49",
+      "title": "Number of partitions of n into distinct parts such that number of parts is odd.",
+      "author_record": "_Naohiro Nomoto_, Feb 23 2002",
+      "locators": [
+        "A067659/A067661 FORMULA parity products"
+      ],
+      "source_blob_sha": "5f3eeae0af9f77f6df23db7c2f3dfffecabafe31",
+      "source_sha256": "1412948d574aa139a69e83d00d5f626056e465b92ca7eda9e86ab504d2f338ff",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/5f3eeae0af9f77f6df23db7c2f3dfffecabafe31"
+    },
+    {
+      "id": "A067661",
+      "url": "https://oeis.org/A067661",
+      "revision_record": "#59 May 30 2026 16:40:08",
+      "title": "Number of partitions of n into distinct parts such that number of parts is even.",
+      "author_record": "_Naohiro Nomoto_, Feb 23 2002",
+      "locators": [
+        "A067659/A067661 FORMULA parity products"
+      ],
+      "source_blob_sha": "f823385ab91e3ab1dc57f3446fd4994b46360d7b",
+      "source_sha256": "e94650c006ae39abd9c24c1bec810c64a4191f8d425fb0a1f86fd1f13e7df95b",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/f823385ab91e3ab1dc57f3446fd4994b46360d7b"
+    },
+    {
+      "id": "A236559",
+      "url": "https://oeis.org/A236559",
+      "revision_record": "#37 Sep 08 2025 00:34:36",
+      "title": "Number of partitions of 2n of type EO (see Comments).",
+      "author_record": "_Clark Kimberling_, Feb 01 2014",
+      "locators": [
+        "A236559 character-table conjecture; Andrews–El Bachraoui Section 11 problems; A344610/A344649 asymptotics and further column formulas"
+      ],
+      "source_blob_sha": "3a64f431b7ab6425952ae338966c1e7d30645c80",
+      "source_sha256": "ee0a99cc0abefd9097f26030e7ca7bc3086f0bc0008f360860e8f5fab12f9a90",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/3a64f431b7ab6425952ae338966c1e7d30645c80"
+    },
+    {
+      "id": "A116406",
+      "url": "https://oeis.org/A116406",
+      "revision_record": "#32 Jan 18 2022 06:55:05",
+      "title": "Expansion of ((1 + x - 2x^2) + (1+x)*sqrt(1-4x^2))/(2(1-4x^2)).",
+      "author_record": "_Paul Barry_, Feb 13 2006",
+      "locators": [
+        "A116406/A114121 FORMULA complementary identities",
+        "A116406 COMMENTS path equivalence",
+        "A116406 FORMULA Mathar recurrence, 2014"
+      ],
+      "source_blob_sha": "9f99b3e4688134e874051382a2e98f36fe1ba68e",
+      "source_sha256": "28e478e20776a56788bd5fc46223b13b25b69b7f84d3ad078f49a7d0cbbbd730",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/9f99b3e4688134e874051382a2e98f36fe1ba68e"
+    },
+    {
+      "id": "A114121",
+      "url": "https://oeis.org/A114121",
+      "revision_record": "#64 Apr 16 2026 12:43:05",
+      "title": "Expansion of (sqrt(1 - 4*x) + (1 - 2*x))/(2*(1 - 4*x)).",
+      "author_record": "_Paul Barry_, Feb 13 2006",
+      "locators": [
+        "A116406/A114121 FORMULA complementary identities",
+        "A114121 recurrence"
+      ],
+      "source_blob_sha": "217fab125a070bda694609bf60fdc1d4ce38ed97",
+      "source_sha256": "05f97bfd64cb1c3dfe3a792477412fdfd69ef3c9c249313640aff48835ee1bf1",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/217fab125a070bda694609bf60fdc1d4ce38ed97"
+    },
+    {
+      "id": "A294175",
+      "url": "https://oeis.org/A294175",
+      "revision_record": "#49 Oct 03 2026 12:23:30",
+      "title": "a(n) = 2^(n-1) + ((1+(-1)^n)/4)*binomial(n, n/2) - binomial(n, floor(n/2)).",
+      "author_record": "_Enrique Navarrete_, Feb 10 2018",
+      "locators": [
+        "NAME and FORMULA"
+      ],
+      "source_blob_sha": "5ad23a390086eeda8d5aca003229582ebe416b40",
+      "source_sha256": "627072ce141131f2a3a03f2b7b24ce9500a870803b505426ddc20545dab1d679",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/5ad23a390086eeda8d5aca003229582ebe416b40"
+    },
+    {
+      "id": "A008549",
+      "url": "https://oeis.org/A008549",
+      "revision_record": "#173 Jul 06 2026 23:22:44",
+      "title": "Number of ways of choosing at most n-1 items from a set of size 2*n+1.",
+      "author_record": "_N. J. A. Sloane_",
+      "locators": [
+        "NAME and FORMULA"
+      ],
+      "source_blob_sha": "d490838f0bf0840f7c9bb1710f1a040c5853e89a",
+      "source_sha256": "3a3d48c2c1faa6ff7cec9cf12527c7b3dffb42f94e7996dcbf5b9cc5b8deae55",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/d490838f0bf0840f7c9bb1710f1a040c5853e89a"
+    },
+    {
+      "id": "A344610",
+      "url": "https://oeis.org/A344610",
+      "revision_record": "#29 May 20 2026 06:41:19",
+      "title": "Triangle read by rows where T(n,k) is the number of integer partitions of 2*n with reverse-alternating sum 2*k.",
+      "author_record": "_Gus Wiseman_, May 31 2021",
+      "locators": [
+        "A344610 FORMULA column convolution",
+        "A236559 character-table conjecture; Andrews–El Bachraoui Section 11 problems; A344610/A344649 asymptotics and further column formulas"
+      ],
+      "source_blob_sha": "914668f168c87718eb5e2a990754c0af7ce7ca10",
+      "source_sha256": "f3149a4c658c018c7670d98e41af7fc36dfd06f305cce7fb0b40fad7669b7283",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/914668f168c87718eb5e2a990754c0af7ce7ca10"
+    },
+    {
+      "id": "A344649",
+      "url": "https://oeis.org/A344649",
+      "revision_record": "#32 May 16 2026 23:41:29",
+      "title": "Triangle read by rows where T(n,k) is the number of strict integer partitions of 2*n with reverse-alternating sum 2*k.",
+      "author_record": "_Gus Wiseman_, Jun 05 2021",
+      "locators": [
+        "A236559 character-table conjecture; Andrews–El Bachraoui Section 11 problems; A344610/A344649 asymptotics and further column formulas"
+      ],
+      "source_blob_sha": "bbeb4d67a4b86a3886215406b38e845170d59fd8",
+      "source_sha256": "0eb9a8c525d10dbb72349bf48b977b392979651c21f93a45557f5356415f3f93",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/bbeb4d67a4b86a3886215406b38e845170d59fd8"
+    },
+    {
+      "id": "A344612",
+      "url": "https://oeis.org/A344612",
+      "revision_record": "#14 Jan 06 2024 14:32:07",
+      "title": "Triangle read by rows where T(n,k) is the number of integer partitions of n with reverse-alternating sum k ranging from -n to n in steps of 2.",
+      "author_record": "_Gus Wiseman_, Jun 01 2021",
+      "locators": [
+        "A344612 COMMENTS even-minus-odd indexed-part expression"
+      ],
+      "source_blob_sha": "e1a94b7802fec629dc7e6f23f1e171af5c18adce",
+      "source_sha256": "da029ffa9847fe0f33f752898724b2bde170dceeb22104cb4be3bb1912bf0e46",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/e1a94b7802fec629dc7e6f23f1e171af5c18adce"
+    },
+    {
+      "id": "A344739",
+      "url": "https://oeis.org/A344739",
+      "revision_record": "#8 Jun 08 2021 06:26:51",
+      "title": "Triangle read by rows where T(n,k) is the number of strict integer partitions of n with reverse-alternating sum k, with k ranging from -n to n in steps of 2.",
+      "author_record": "_Gus Wiseman_, Jun 05 2021",
+      "locators": [
+        "NAME and FORMULA"
+      ],
+      "source_blob_sha": "aee9371160dee99b75c45186964074c4d1313eff",
+      "source_sha256": "34d554d3ea57d1fd86b135f30052728e5edcdfb0f6cae62cd798de59e73f4029",
+      "source_api_url": "https://api.github.com/repos/oeis/oeisdata/git/blobs/aee9371160dee99b75c45186964074c4d1313eff"
+    },
+    {
+      "id": "Andrews-El-Bachraoui-2026",
+      "authors": [
+        "George E. Andrews",
+        "Mohamed El Bachraoui"
+      ],
+      "title": "On a two-color partition series and its companions",
+      "url": "https://arxiv.org/abs/2606.30208v1",
+      "released": "2026-06-29",
+      "locators": [
+        "Theorem 5, (3.3)–(3.5), p.6",
+        "Proof, pp.16–17",
+        "Remark 4, p.7",
+        "Section 11, p.18"
+      ],
+      "scope": "Strict odd-length generating functions, not the unrestricted inequality or monotonicity questions",
+      "journal": "Journal of Number Theory 292 (scheduled March 2027), 78–102",
+      "doi": "10.1016/j.jnt.2026.06.002",
+      "pdf_sha256": "b7ef50c827091ea975c8d182358f34d06df5ac50c891e7f37bd49b40b7a79fda"
+    },
+    {
+      "id": "pinned-Lean-result",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/d133fcb1d5e4878bdf5232fd0c07ef2abb3da1d9/D5/S1/Words/Compositions/WisemanA344611OddLengthInjection.lean",
+      "declaration": "D5.S1.Words.Compositions.WisemanA344611OddLengthInjection.result",
+      "scope": "For all natural n, C(2n)<=O(2n+1)",
+      "source_revision": "d133fcb1d5e4878bdf5232fd0c07ef2abb3da1d9",
+      "name": "lean.lean",
+      "bytes": 15604,
+      "sha256": "b67f7eaef4ebad51b20dabdab3a626489dce82f7e9724ba70d1647c2e30ebd36"
+    },
+    {
+      "id": "pinned-recurrence-dependency",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/d133fcb1d5e4878bdf5232fd0c07ef2abb3da1d9/D5/S1/Words/Compositions/TrimmedAlternatingPartitions.lean",
+      "source_revision": "d133fcb1d5e4878bdf5232fd0c07ef2abb3da1d9",
+      "scope": "sumsFrom/trimmedSums recurrence; endpoint distinctness iff strictly decreasing tail; endpoint-distinct partition count equals next-weight distinct-part count",
+      "name": "dependency.lean",
+      "bytes": 12263,
+      "sha256": "dbc9a571a6e8d0eb130a924caaa5d9221ca095b0713487f6764977fca12f33bc"
+    }
+  ]
+}

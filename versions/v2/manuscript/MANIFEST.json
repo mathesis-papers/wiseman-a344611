@@ -1,0 +1,39 @@
+{
+  "files": [
+    {
+      "name": "note.tex",
+      "bytes": 23628,
+      "sha256": "23fbc0fe5a397537f3d188f9cddae3e7f2ed8cc6bd6a83857fe90315713f1cfa"
+    },
+    {
+      "name": "README.md",
+      "bytes": 3607,
+      "sha256": "4d9e07109d39a88173d524ff969f0620d317a5e4a6790921ce9a94a01bb16d70"
+    },
+    {
+      "name": "metadata.json",
+      "bytes": 2350,
+      "sha256": "ec5e5cb4f9d40c5982caa34e2a6d99ab2dc723332e45574b7279f93dc8108f89"
+    },
+    {
+      "name": "references.json",
+      "bytes": 16131,
+      "sha256": "981391c129f86d549345d3324c0314bf0406e4929b8e7b2c83fc235b1c382ba3"
+    },
+    {
+      "name": "verify.py",
+      "bytes": 15340,
+      "sha256": "1fdc8c7bef918aad11ff2bd8ab6fe825095feeeee23394bf125e052c80e8a67f"
+    },
+    {
+      "name": "verification.json",
+      "bytes": 5435,
+      "sha256": "2fccd63be6e6218c4c159e9856b6572ba0c69808938f12638322ebad177c0600"
+    },
+    {
+      "name": "LICENSE.txt",
+      "bytes": 445,
+      "sha256": "8b4d5b1cc417e4df532e0a9bb370fceff4f8ccdf1f52263f3d2549d5043040d7"
+    }
+  ]
+}

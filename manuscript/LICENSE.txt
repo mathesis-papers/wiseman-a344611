@@ -1,0 +1,10 @@
+Proof of Wiseman's A344611 conjecture, with strictness and a corrected companion inequality
+Haobo Ma and Wenlin Zhang, 2026
+
+This note, its original source, and the accompanying verification code are
+licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+License identifier: cc-by-4.0
+License terms: https://creativecommons.org/licenses/by/4.0/legalcode
+
+The license does not replace the terms of independently cited works.

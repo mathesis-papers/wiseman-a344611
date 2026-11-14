@@ -1,0 +1,62 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 106651,
+      "matches_public": null,
+      "path": "paper.pdf",
+      "public_sha256": null,
+      "sha256": "3cca45aae0f5af1a3628f26aae699e67543e40f4c4ea3c02b053e1210dfe390a"
+    },
+    "source": {
+      "bytes": 21952,
+      "matches_public": null,
+      "path": "source.archive",
+      "public_sha256": null,
+      "sha256": "6160dc89b6d594fae5bf92331393672c531c5b9f742e3bc70eff61a1f0636411"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "For OEIS A344611, FORMULA (revision 27), we prove A344611(n) <= A160786(n) for every n >= 0 and give an alternative derivation of Manyama's (2026) convolution, complementing Andrews–El Bachraoui's (2026) strict-partition formulas. An injection sends a partition with nonnegative reverse-alternating sum to an odd-length partition of the next weight. We characterize equality, give an explicit lower bound for the deficit, and deduce monotonicity of the corresponding unrestricted count. The same parity analysis proves a shifted companion comparison, determines all plateaus of the negative-sum count, and corrects neighboring indexing and distinct-part descriptions. A bivariate series settles the linked ordered-composition interpretations, with their precise shifts.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "d133fcb1d5e4878bdf5232fd0c07ef2abb3da1d9",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/d133fcb1d5e4878bdf5232fd0c07ef2abb3da1d9/D5/S1/Words/Compositions/WisemanA344611OddLengthInjection.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "url": "/api/v1/collected-papers/wiseman-a344611/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-14T06:04:47.670987671Z",
+    "record": "wiseman-a344611",
+    "repository_name": "wiseman-a344611",
+    "source": {
+      "url": "/api/v1/collected-papers/wiseman-a344611/files/source?version=2"
+    },
+    "title": "Strictness and sibling corrections for OEIS A344611, FORMULA, with an alternative derivation of Manyama's (2026) convolution",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-14T06:04:47.670987671Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "wiseman-a344611"
+  }
+}

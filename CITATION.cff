@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it."
+title: "Strictness and sibling corrections for OEIS A344611, FORMULA, with an alternative derivation of Manyama's (2026) convolution"
+authors:
+  - name: "Haobo Ma"
+  - name: "Wenlin Zhang"
+date-released: "2026-11-14"
+version: "2"
+url: "https://mathesis-omega-research.apps.chrono-ai.fun/papers/wiseman-a344611?version=2"
+license: "CC-BY-4.0"

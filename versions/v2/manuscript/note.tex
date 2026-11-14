@@ -1,0 +1,495 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[colorlinks=true,allcolors=blue,breaklinks=true]{hyperref}
+\setlength{\emergencystretch}{1.5em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\len}{\ell}
+\title{Strictness and sibling corrections for OEIS A344611, FORMULA,\protect\\
+with an alternative derivation of Manyama's (2026) convolution}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\
+\small ChronoAI Pte Ltd, Singapore}
+\date{November 5, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For OEIS A344611, FORMULA (revision 27), we prove
+$\mathrm{A344611}(n)\le\allowbreak\mathrm{A160786}(n)$ for every $n\ge0$
+and give an alternative derivation of Manyama's (2026) convolution,
+complementing Andrews--El Bachraoui's (2026) strict-partition formulas.
+An injection sends a partition with nonnegative
+reverse-alternating sum to an odd-length partition of the next weight.
+We characterize equality, give an explicit lower bound for the deficit,
+and deduce monotonicity of the corresponding unrestricted count.
+The same parity analysis proves a shifted companion comparison, determines
+all plateaus of the negative-sum count, and corrects neighboring indexing
+and distinct-part descriptions. A bivariate series settles the linked
+ordered-composition interpretations, with their precise shifts.
+\end{abstract}
+
+\section{The question and the partition counts}
+Wiseman's FORMULA in OEIS A344611, revision 27, states
+``Conjecture: a(n) <= A160786(n)'' \cite{a344611}.
+Here the first count concerns partitions of $2n$ with nonnegative
+reverse-alternating sum, and the second counts partitions of $2n+1$
+with an odd number of parts \cite{a160786,a027193}.
+We prove the comparison, including $n=0$, by an explicit injection.
+Its missing images also determine exactly when equality holds.
+
+A partition $\lambda=(\lambda_1,\ldots,\lambda_k)$ has positive integer
+parts in nonincreasing order, weight $|\lambda|=\sum_i\lambda_i$,
+and length $\len(\lambda)=k$. Put
+\[
+ R(\lambda)=\sum_{i=1}^k(-1)^{k-i}\lambda_i,
+ \qquad R(\varnothing)=0.
+\]
+Let $O(m)$ and $E(m)$ count partitions of $m$ of odd and even length,
+respectively, and let $p(m)=O(m)+E(m)$ \cite{a027193,a027187,a000041}.
+The empty partition has even
+length, so $p(0)=E(0)=1$ and $O(0)=0$. Write
+\[
+ C(m)=\#\{\lambda:|\lambda|=m,\ R(\lambda)\ge0\},\qquad
+ N(m)=\#\{\lambda:|\lambda|=m,\ R(\lambda)<0\}.
+\]
+Thus A344611$(n)=C(2n)$, A160786$(n)=O(2n+1)$,
+A344743$(n)=N(2n)$, and A236914$(n)=E(2n+1)$
+\cite{a344611,a160786,a344743,a236914}.
+
+The distinct-part companion A344650 occurs in the convolution below.
+Andrews and El Bachraoui (2026), Section 3, Theorem 5, give generating
+functions for this distinct-part count \cite{andrews}.
+Their statement is different from the unrestricted-count inequality
+proved here. The convolution recorded by Seiichi Manyama on May 17, 2026,
+and the conjugation interpretation listed in A344611 receive
+elementary proofs below. These identities supply the distinct-part
+setting for the injection and its signed-endpoint extension.
+
+\section{Parity and the injection}
+\begin{lemma}\label{lem:sign}
+Every odd-length partition has $R(\lambda)>0$.
+An even-length partition has $R(\lambda)\le0$, with equality precisely
+when $\lambda_{2i-1}=\lambda_{2i}$ for every adjacent pair.
+More precisely, if $o(\lambda')$ is the number of odd parts of the
+conjugate, then $R(\lambda)=(-1)^{k-1}o(\lambda')$ for $k>0$.
+Consequently,
+\begin{equation}\label{eq:counts}
+ C(m)=O(m)+\begin{cases}p(m/2),&m\text{ even},\\0,&m\text{ odd},\end{cases}
+ \quad
+ N(m)=E(m)-\begin{cases}p(m/2),&m\text{ even},\\0,&m\text{ odd}.
+ \end{cases}
+\end{equation}
+\end{lemma}
+\begin{proof}
+For $k$ odd,
+$R(\lambda)=(\lambda_1-\lambda_2)+\cdots+
+(\lambda_{k-2}-\lambda_{k-1})+\lambda_k>0$.
+For $k$ even,
+$R(\lambda)=-\sum_{i=1}^{k/2}(\lambda_{2i-1}-\lambda_{2i})$.
+Each difference is nonnegative, so equality means that all these
+differences vanish. The number of odd-height columns is
+$\sum_i(\lambda_{2i-1}-\lambda_{2i})$, with an unpaired last part
+included when $k$ is odd; this proves the conjugate formula.
+Such zero-sum partitions are exactly the partitions obtained
+by duplicating every part of an arbitrary partition of $m/2$.
+The empty partition is included in this description.
+\end{proof}
+
+\begin{theorem}\label{thm:main}
+For every $m\in\NN$, $C(m)\le O(m+1)$.
+In particular, A344611$(n)\le$ A160786$(n)$ for every $n\in\NN$.
+Equality in this latter comparison holds exactly for $0\le n\le3$.
+For $n\ge4$, the deficit satisfies
+\begin{equation}\label{eq:gap}
+ O(2n+1)-C(2n)\ \ge\ \left\lfloor\frac{n-4}{2}\right\rfloor+1.
+\end{equation}
+\end{theorem}
+\begin{proof}
+For a partition counted by $C(m)$ define
+\[
+ F(\lambda)=
+ \begin{cases}
+ (\lambda_1+1,\lambda_2,\ldots,\lambda_k),&k\text{ odd},\\
+ (\lambda_1,\ldots,\lambda_k,1),&k\text{ even}.
+ \end{cases}
+\]
+In particular $F(\varnothing)=(1)$. Both branches preserve the
+nonincreasing order, increase weight by one, and have odd length.
+Each branch is injective: subtract one from the first part in the
+odd branch, or delete the last $1$ in the even branch.
+
+The odd branch has a unique largest part and that part is at least $2$.
+By Lemma~\ref{lem:sign}, every nonempty even source starts with two equal
+parts, so its image has a repeated largest part. The exceptional even
+source $\varnothing$ has image $(1)$, which cannot come from the odd
+branch. Thus the images of the branches are disjoint, proving injectivity.
+
+For $n\ge4$ and $0\le j\le\lfloor(n-4)/2\rfloor$, consider
+\[
+ \mu^{(j)}=(3,3,3,\underbrace{2,\ldots,2}_{2j},
+                   \underbrace{1,\ldots,1}_{2n-8-4j}).
+\]
+These are distinct odd-length partitions of $2n+1$ with repeated largest
+part and $R(\mu^{(j)})=3$. They cannot lie in the odd branch. Every even
+branch image has reverse-alternating sum $1$, since its source has sum
+$R=0$ and appending $1$ changes $R$ to $1-R$. Hence none of the
+$\mu^{(j)}$ lies in the image of $F$, proving \eqref{eq:gap}.
+For $n=0,1,2,3$, the two counts are respectively $1,2,4,8$,
+as direct enumeration of partitions of weights at most $7$ gives.
+\end{proof}
+
+For completeness, equality in the general-weight comparison is exactly
+$m\in\{0,1,2,3,4,6\}$. The even weights were just treated. At odd
+$m\ge5$, the target $(2,2,2,1^{m-5})$ has odd length and repeated
+largest part, so is outside the odd branch; an even paired source
+cannot have odd weight. At $m=1,3$ the respective counts are $1,2$.
+
+\begin{corollary}\label{cor:mono}
+The sequence $C(m)$, namely A344607, is nondecreasing,
+answering the question in its COMMENTS section \cite{a344607}.
+Its adjacent equalities are exactly
+$C(m)=C(m+1)$ for $m\in\{0,2,4,6\}$.
+\end{corollary}
+\begin{proof}
+For even $m$, \eqref{eq:counts} gives $C(m+1)=O(m+1)$,
+so the conclusion is Theorem~\ref{thm:main}.
+For odd $m$, the same formula and that theorem give
+$C(m)\le O(m+1)<O(m+1)+p((m+1)/2)=C(m+1)$.
+Here $p((m+1)/2)\ge1$.
+\end{proof}
+
+\section{The companion comparison and two source identities}
+\begin{proposition}\label{prop:negative}
+The negative-sum counts, namely A344608, satisfy
+$N(m)\le N(m+1)$ for every $m\ge0$, answering its COMMENTS
+monotonicity question \cite{a344608}.
+The COMMENTS of A344743 say exactly ``Conjecture: a(n) >= A236914.''
+\cite{a344743}, without specifying the argument on the right.
+A common-index reading is not asserted explicitly in the source;
+it fails at $n=1$, with sides $0$ and $1$.
+A precise valid comparison is
+\begin{equation}\label{eq:corrected}
+ \mathrm{A344743}(n+1)\ \ge\ \mathrm{A236914}(n)
+ \qquad(n\ge0).
+\end{equation}
+Equality in \eqref{eq:corrected} holds exactly for $n=0,1,2,3$;
+for $n\ge4$ its deficit is at least $\lfloor(n-4)/2\rfloor+1$.
+More generally, $N(m)=N(m+1)$ exactly for
+$m\in\{0,1,3,5,7\}$.
+By conjugation, $N(m)$ also counts partitions with even largest part
+and at least one odd part. In particular, the odd-weight identity is
+$N(2n+1)=E(2n+1)$; the index $2n+2$ and the phrase concerning parts
+not all odd in the COMMENTS of A344608 require these corrections.
+\end{proposition}
+\begin{proof}
+By Lemma~\ref{lem:sign}, a negative-sum partition has even length.
+Increasing its first part by $1$ changes $R$ to $R-1<0$ and gives
+an injective map to negative-sum partitions of the next weight.
+This proves monotonicity.
+Every even-length partition of odd weight has $R<0$, since a partition
+with all adjacent pairs equal has even weight. Thus $N(2n+1)=E(2n+1)$,
+and monotonicity proves \eqref{eq:corrected}.
+At $n=1$, the partitions of $2$ are $(2)$ and $(1,1)$, with sums $2$
+and $0$, so $N(2)=0$; the only even-length partition of $3$ is $(2,1)$,
+so $E(3)=1$. Thus the common-index reading fails.
+For $n\ge4$ and $0\le j\le\lfloor(n-4)/2\rfloor$,
+$(3,3,3,2^{2j},1^{2n-7-4j})$ is a partition of $2n+2$
+of even length with $R=-2$. These distinct targets have repeated
+largest part, whereas the increase-first-part map has a unique largest
+part. They prove the quantitative bound. For even $m=2r\ge2$,
+the target $(r+1,r)$ has $R=-1$; its only possible preimage $(r,r)$
+has sum zero. Hence $N(m)<N(m+1)$. For odd $m\ge9$ the preceding
+witness applies. Direct enumeration gives the remaining values
+$N(0),\ldots,N(8)=0,0,0,1,1,3,3,7,7$, establishing both equality claims.
+For the conjugation assertion, even length is equivalent to even
+largest part of the conjugate. Within this class $R<0$ means that
+some adjacent pair of original parts is unequal, or equivalently
+that a column has odd height. This means exactly that the conjugate
+has at least one odd part.
+\end{proof}
+
+\begin{corollary}\label{cor:distinct}
+Among distinct-part partitions, $R>0$ means odd length and $R<0$
+means even length. Thus the distinct negative-sum count is
+\textup{A067661}$(m)$ for $m>0$, and is zero at $m=0$.
+The distinct nonnegative-sum count is \textup{A067659}$(m)$ for $m>0$,
+with the empty partition added at zero.
+The identification of the distinct negative-sum count with A067659
+in A344608, CROSSREFS, fails at $m=5$: $(4,1),(3,2)$ give two
+negative objects, whereas $(5)$ is the sole positive one.
+\end{corollary}
+\begin{proof}
+Every difference in Lemma~\ref{lem:sign} is positive for distinct parts.
+Writing $D_+(x)=\prod_{s\ge1}(1+x^s)$ and
+$D_-(x)=\prod_{s\ge1}(1-x^s)$, the even- and odd-length generating
+functions are $(D_++D_-)/2$ and $(D_+-D_-)/2$.
+This rederives the formulas recorded by Jovovic (2002)
+\cite{a067659,a067661}; the latter also occurs in
+Andrews--El Bachraoui (2026), Theorem 5 \cite{andrews}.
+\end{proof}
+
+\begin{proposition}\label{prop:identities}
+Let $d(0)=1$, and for $r\ge1$ let $d(r)$ count distinct-part partitions
+of $2r$ with odd length, namely A344650$(r)$.
+Then
+\begin{equation}\label{eq:convolution}
+ C(2n)=\sum_{r=0}^n d(r)p(n-r).
+\end{equation}
+Conjugation also identifies the partitions counted by $C(m)$ with
+partitions of $m$ whose largest part is odd or whose parts are all even,
+with the empty partition included in the latter class.
+More generally, let $B_m(s)$ and $D_m(s)$ count unrestricted and
+distinct-part partitions of $m$ with $R=s$. Then for every integer $s$,
+\begin{equation}\label{eq:signed}
+ B_m(s)=\sum_{t=0}^{\lfloor m/2\rfloor}p(t)D_{m-2t}(s).
+\end{equation}
+\end{proposition}
+\begin{proof}
+For each part size $s$, write its multiplicity uniquely as
+$\epsilon_s+2t_s$ with $\epsilon_s\in\{0,1\}$.
+This decomposes a partition as a distinct-part partition $\rho$ and
+a partition $\nu$ with every part duplicated. Removing two equal
+adjacent parts cancels their contributions to $R$, and preserves the
+signs of all remaining parts. Thus $R(\lambda)=R(\rho)$ and
+$|\lambda|=|\rho|+2|\nu|$, proving \eqref{eq:signed} bijectively.
+The parity of the original
+length equals that of $\len(\rho)$. Lemma~\ref{lem:sign} therefore says
+that a partition of $2n$ is counted by $C(2n)$ exactly when
+$\rho$ is empty or has odd length. In either case $|\rho|=2r$ is even,
+and $|\nu|=n-r$. This is a bijective proof of \eqref{eq:convolution},
+the convolution displayed in A344611 \cite{a344611,a344650}.
+The value $d(0)=1$ represents the empty residual partition, not an
+odd-length partition of zero.
+
+For conjugation, the largest part of $\lambda'$ is $\len(\lambda)$.
+An odd-length $\lambda$ therefore corresponds exactly to a conjugate
+with odd largest part. A partition with all adjacent pairs equal
+corresponds exactly to a conjugate whose parts are all even: the latter
+parts are the column heights of the original Ferrers diagram.
+These two classes are disjoint. Lemma~\ref{lem:sign} gives the result.
+\end{proof}
+
+Here $C(2n)$ is the \emph{even} bisection of A344607; the word
+``Odd'' in A344611, CROSSREFS, needs this replacement.
+Also $O(2n)=\mathrm{A236559}(n)$, so
+$C(2n)=\mathrm{A236559}(n)+p(n)$, rather than an equality of those
+two sequences \cite{a236559}.
+Equation~\eqref{eq:signed} rederives Manyama's (May 17, 2026)
+column convolution in A344610 from A344649, and extends it to the
+signed triangles A344612 and A344739 \cite{triangles}.
+For the even-minus-odd indexed-part expression in A344612, COMMENTS,
+the factor is $(-1)^k$, not $(-1)^{k-1}$: the singleton $(1)$ has
+$R=1$, not $-1$.
+
+\begin{corollary}\label{cor:ordered}
+Let $H(m)$ and $J(m)$ count compositions of $m$ with reverse-alternating
+sum nonnegative and negative, respectively. Then $H(0)=1$, $J(0)=0$,
+and for $m\ge1$,
+\[
+ H(m)=\sum_{j=0}^{\lfloor m/2\rfloor}\binom{m-1}{j}
+ =\mathrm{A116406}(m),\qquad
+ J(m)=2^{m-1}-H(m)=\mathrm{A294175}(m-1).
+\]
+In particular $H(2r)=\mathrm{A114121}(r)$ for $r\ge0$, and
+$J(2r)=\mathrm{A008549}(r-1)$ for $r\ge1$.
+These prove the ``appears to be'' ordered interpretations in
+A344607 and A344611, and specify the shift missing from A344608.
+\end{corollary}
+\begin{proof}
+Reversing a composition changes its reverse-alternating sum into the
+ordinary alternating sum. Mark weight by $x$ and this latter sum by $z$.
+With $f(t)=t/(1-t)$, grouping consecutive positive and negative positions
+gives the formal series
+\[
+ \frac{1+f(xz)}{1-f(xz)f(x/z)}
+ =\frac{1-x/z}{1-x(z+z^{-1})}.
+\]
+For $m\ge1$, its $x^m z^s$ coefficient is
+$\binom{m-1}{(m+s)/2-1}$, with an out-of-range or noninteger
+lower argument interpreted as zero. Summing over $s\ge0$ and using
+binomial symmetry gives $H(m)$ above. The complementary count is $J(m)$.
+The formulas in A116406 (Barry, 2007), A114121 (Barry, 2009),
+A294175 (Israel, 2018), and A008549 give the stated identifications
+\cite{a116406,a114121,a294175,a008549}. For example,
+$H(2r)=4^{r-1}+\frac12\binom{2r}{r}$ and
+$J(2r)=4^{r-1}-\binom{2r-1}{r-1}$ for $r\ge1$.
+The unshifted formula $H(m)=2^{m-1}-\mathrm{A294175}(m)$ in
+A116406, FORMULA, is corrected by $m-1$: at $m=4$ it is $3$ while
+$H(4)=7$. Likewise, the complementary formula in A114121, FORMULA
+(Wiseman, June 27, 2021), needs A008549$(r-1)$ instead of A008549$(r)$;
+at $r=2$ the unshifted right side is $2$ rather than $7$.
+\end{proof}
+
+The formula for $H(m)$ also counts binary words of length $m$ beginning
+with $1$ and having at most $\lfloor m/2\rfloor$ zeros. In the path
+description in A116406, COMMENTS (Stephan, 2008), the corresponding
+condition is a nonnegative \emph{endpoint}, not nonnegative height
+at every step: $1001$ contributes at length four but its path visits
+height $-1$. There are seven such words and only six nonnegative paths
+of length four.
+
+\begin{corollary}\label{cor:recurrence}
+The recurrence conjectured by Mathar (2014) in A116406, FORMULA, holds
+for $m\ge3$:
+\[
+ m(m-3)H(m)+2(-m^2+4m-2)H(m-1)
+ -4(m-2)^2H(m-2)+8(m-2)(m-3)H(m-3)=0.
+\]
+\end{corollary}
+\begin{proof}
+The binomial formulas give
+$G(x)=\sum_{m\ge0}H(m)x^m
+=(1+x-2x^2)/(2(1-4x^2))+(1+x)/(2\sqrt{1-4x^2})$.
+With $\theta=x\,d/dx$, differentiation gives
+\[
+ [(1-2x-4x^2+8x^3)\theta^2+(-3+4x+8x^3)\theta+2x]G=0.
+\]
+The coefficient of $x^m$ is exactly the stated recurrence.
+\end{proof}
+
+\section{Coverage and exact checks}
+\begin{center}\footnotesize
+\begin{tabular}{p{0.37\linewidth}p{0.54\linewidth}}
+\toprule
+Source item & Coverage \\
+\midrule
+A344611, FORMULA comparison & Proved; Theorem~\ref{thm:main}. \\
+A344611, displayed deficit & Not posed as an all-index formula;
+equality exactly for $n=0,1,2,3$;
+strictness and bound \eqref{eq:gap} for $n\ge4$. \\
+A344611, convolution & Reproved; prior formula Manyama (2026);
+Proposition~\ref{prop:identities}. \\
+A344610 column convolution; A344612/A344739 signed triangles &
+Reproved; prior formula Manyama (2026) for A344610;
+all weights and signed endpoints covered by \eqref{eq:signed}. \\
+A344612, indexed-part expression & Refuted-and-corrected at $(1)$;
+factor $(-1)^k$ for even-minus-odd indexed sums. \\
+A344611/A344607, conjugation comment & Proved; Lemma~\ref{lem:sign}
+and Proposition~\ref{prop:identities}. \\
+A344607 monotonicity & Proved with exact plateaus;
+Corollary~\ref{cor:mono}. \\
+A344743, COMMENTS comparison & Argument unspecified; common-index
+reading not asserted explicitly, fails at $n=1$; shifted statement
+\eqref{eq:corrected} proved (not posed in that form). \\
+A344608 monotonicity, odd-weight bisection, conjugation & Monotonicity
+proved with exact plateaus; index and parity wording refuted-and-corrected;
+Proposition~\ref{prop:negative}. \\
+A344608, distinct-part cross-reference & Refuted-and-corrected;
+Corollary~\ref{cor:distinct}. \\
+A344611, bisection cross-reference & Refuted-and-corrected: even bisection. \\
+A344650 generating functions & Prior formulas cited:
+Andrews--El Bachraoui (2026), Theorem 5, (3.5). Its odd-length
+product (3.4) is reproved in Corollary~\ref{cor:distinct};
+prior formula Jovovic (2002). \\
+A344607/A344611/A344608 ordered interpretations & Proved with exact shifts;
+Corollary~\ref{cor:ordered}; formulas rederived from Barry (2007, 2009)
+and Israel (2018). \\
+A116406/A114121, complementary formulas & Refuted-and-corrected;
+Corollary~\ref{cor:ordered}. \\
+A116406, path equivalence and recurrence & Path condition
+refuted-and-corrected at length four; Mathar's (2014) recurrence proved
+in Corollary~\ref{cor:recurrence}. \\
+A114121, recurrence & Prior proof cited: Israel (2020), FORMULA. \\
+A236559, character-table conjecture;
+Andrews--El Bachraoui (2026), Section 11; further asymptotics and
+column formulas in A344610/A344649 & Not covered: different objects
+or additional identities. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The declaration \texttt{result} in the pinned Lean source \cite{lean}
+has conclusion $\forall n\in\NN,\ C(2n)\le O(2n+1)$.
+Its definitions use positive multiset parts sorted in decreasing order
+and the endpoint recurrence $s_0=0$, $s_i=\lambda_i-s_{i-1}$,
+whose last value is $R(\lambda)$. Thus its source and target counts
+match those above. Its dependency \texttt{trimmedSums} in
+\href{https://github.com/the-omega-institute/trureturing/blob/d133fcb1d5e4878bdf5232fd0c07ef2abb3da1d9/D5/S1/Words/Compositions/TrimmedAlternatingPartitions.lean}{\texttt{TrimmedAlternatingPartitions.lean}}
+is the recurrence $s_0=0$, $s_i=\lambda_i-s_{i-1}$; induction gives
+$s_k=R(\lambda)$. The declaration
+\texttt{trimmedSums\_nodup\_iff\_strict\_tail} states that for positive
+nonincreasing parts, the recurrence endpoints are distinct exactly
+when the tail is strictly decreasing. Its
+\texttt{card\_trimmedSums\_eq\_distincts} equates that endpoint-distinct
+count at weight $m$ with distinct-part partitions of weight $m+1$;
+neither is the sign comparison.
+The general-weight theorem, strictness, plateaus, companion corrections,
+source identities, and ordered compositions have written proofs here.
+
+The accompanying \texttt{verify.py} enumerates all partitions of weights
+$0$ through $42$, checks both maps through source weight $41$, and
+compares the counts with independent length-parity dynamic programs.
+It checks \eqref{eq:counts}, \eqref{eq:gap}, and
+\eqref{eq:convolution}, the shifted comparison, the conjugation
+interpretation, and the displayed OEIS initial values through $n=20$.
+It also checks the exact plateau sets, distinct-part corrections,
+the signed convolution, and all compositions of weights $0$ through
+$16$ against the bivariate coefficient formula and the cited initial
+values. The ordered recurrence is checked through index $100$.
+These are finite checks; the unbounded assertions follow from the
+proofs above.
+
+\begin{thebibliography}{20}
+\footnotesize
+\setlength{\itemsep}{0pt}
+\bibitem{a344611} G. Wiseman, OEIS A344611 (2021),
+FORMULA, COMMENTS, EXAMPLE, and AUTHOR,
+\url{https://oeis.org/A344611}.
+\bibitem{a160786} U. Sarkar, OEIS A160786 (2009), NAME and FORMULA,
+\url{https://oeis.org/A160786}.
+\bibitem{a027193} OEIS Foundation Inc., OEIS A027193, NAME,
+\url{https://oeis.org/A027193}.
+\bibitem{a027187} OEIS Foundation Inc., OEIS A027187, NAME,
+\url{https://oeis.org/A027187}.
+\bibitem{a000041} OEIS Foundation Inc., OEIS A000041, NAME,
+\url{https://oeis.org/A000041}.
+\bibitem{a344743} G. Wiseman, OEIS A344743 (2021), COMMENTS,
+\url{https://oeis.org/A344743}.
+\bibitem{a236914} C. Kimberling, OEIS A236914 (2014), NAME and COMMENTS,
+\url{https://oeis.org/A236914}.
+\bibitem{a344650} G. Wiseman, OEIS A344650 (2021), NAME and FORMULA,
+\url{https://oeis.org/A344650}.
+\bibitem{andrews} G. E. Andrews and M. El Bachraoui,
+\emph{On a two-color partition series and its companions},
+arXiv:2606.30208v1 (2026), Section 3, Theorem 5, pp.~6 and 16--17,
+\url{https://arxiv.org/abs/2606.30208v1}.
+Journal metadata: \emph{J. Number Theory} \textbf{292} (2027), 78--102,
+\href{https://doi.org/10.1016/j.jnt.2026.06.002}{doi:10.1016/j.jnt.2026.06.002};
+the theorem locators above refer to the preprint.
+\bibitem{lean} \emph{WisemanA344611OddLengthInjection.lean},
+declaration \texttt{result}, commit \texttt{d133fcb1d5e4},
+\href{https://github.com/the-omega-institute/trureturing/blob/d133fcb1d5e4878bdf5232fd0c07ef2abb3da1d9/D5/S1/Words/Compositions/WisemanA344611OddLengthInjection.lean}{pinned Lean declaration}.
+\bibitem{a344607} G. Wiseman, OEIS A344607 (2021), COMMENTS,
+\url{https://oeis.org/A344607}.
+\bibitem{a344608} G. Wiseman, OEIS A344608 (2021), COMMENTS,
+\url{https://oeis.org/A344608}.
+\bibitem{a067659} OEIS A067659, NAME and FORMULA (Jovovic, February 24, 2002),
+\url{https://oeis.org/A067659}.
+\bibitem{a067661} OEIS A067661, NAME and FORMULA (Jovovic, February 24, 2002),
+\url{https://oeis.org/A067661}.
+\bibitem{a236559} C. Kimberling, OEIS A236559 (2014), COMMENTS,
+\url{https://oeis.org/A236559}.
+\bibitem{a116406} P. Barry, OEIS A116406, FORMULA (October 6, 2007),
+and G. Wiseman, COMMENTS (June 20, 2021), \url{https://oeis.org/A116406}.
+\bibitem{a114121} OEIS A114121, FORMULA (Barry, September 7, 2009;
+Israel, July 27, 2020),
+COMMENTS (Wiseman, June 21, 2021), \url{https://oeis.org/A114121}.
+\bibitem{a294175} OEIS A294175, FORMULA (Israel, February 12, 2018),
+COMMENTS (Wiseman, July 22, 2021), \url{https://oeis.org/A294175}.
+\bibitem{a008549} OEIS A008549, FORMULA and OFFSET,
+\url{https://oeis.org/A008549}.
+\bibitem{triangles} G. Wiseman, OEIS signed-partition triangles (2021):
+\href{https://oeis.org/A344610}{A344610} (FORMULA, Manyama, May 17, 2026),
+\href{https://oeis.org/A344649}{A344649},
+\href{https://oeis.org/A344612}{A344612}, and
+\href{https://oeis.org/A344739}{A344739} (NAME and COMMENTS).
+\end{thebibliography}
+\noindent\footnotesize Sources accessed November 4--5, 2026. License:
+\href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 (CC BY 4.0)}.
+\end{document}

@@ -1,0 +1,23 @@
+{
+  "id": "wiseman-a344611",
+  "revision": 2,
+  "problem_ids": [
+    "wiseman-a344611"
+  ],
+  "topic": "Reverse-alternating partition sums, signed convolutions, and ordered compositions",
+  "title": "Strictness and sibling corrections for OEIS A344611, FORMULA, with an alternative derivation of Manyama's (2026) convolution",
+  "creators": [
+    {
+      "name": "Haobo Ma",
+      "affiliation": "ChronoAI Pte Ltd, Singapore"
+    },
+    {
+      "name": "Wenlin Zhang",
+      "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"
+    }
+  ],
+  "abstract": "For OEIS A344611, FORMULA (revision 27), we prove A344611(n) <= A160786(n) for every n >= 0 and give an alternative derivation of Manyama's (2026) convolution, complementing Andrews–El Bachraoui's (2026) strict-partition formulas. An injection sends a partition with nonnegative reverse-alternating sum to an odd-length partition of the next weight. We characterize equality, give an explicit lower bound for the deficit, and deduce monotonicity of the corresponding unrestricted count. The same parity analysis proves a shifted companion comparison, determines all plateaus of the negative-sum count, and corrects neighboring indexing and distinct-part descriptions. A bivariate series settles the linked ordered-composition interpretations, with their precise shifts.",
+  "summary": "For OEIS A344611, FORMULA (revision 27), we prove A344611(n) <= A160786(n) for every n >= 0 and give an alternative derivation of Manyama's (2026) convolution, complementing Andrews–El Bachraoui's (2026) strict-partition formulas. An injection sends a partition with nonnegative reverse-alternating sum to an odd-length partition of the next weight. We characterize equality, give an explicit lower bound for the deficit, and deduce monotonicity of the corresponding unrestricted count. The same parity analysis proves a shifted companion comparison, determines all plateaus of the negative-sum count, and corrects neighboring indexing and distinct-part descriptions. A bivariate series settles the linked ordered-composition interpretations, with their precise shifts.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/d133fcb1d5e4878bdf5232fd0c07ef2abb3da1d9/D5/S1/Words/Compositions/WisemanA344611OddLengthInjection.lean"
+}
