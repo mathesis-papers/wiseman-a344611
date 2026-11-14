@@ -1,0 +1,103 @@
+{
+  "schema": "trureturing-books.template-manifest.v1",
+  "template": "mathesis",
+  "version": "0.5.0",
+  "files": {
+    ".github/workflows/layer-mathesis-check.yml": {
+      "sha256": "679d1e4b8ea8b2cb505e5aee25748c13b4a42a0837787032c9e17f227f2f38c4",
+      "mode": "100644"
+    },
+    ".github/workflows/layer-mathesis-zenodo.yml": {
+      "sha256": "2e5440477e4c20540d24b0caa2655f7167bf8d3161d09c5308eb46cdf7340c82",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/CHANGELOG.md": {
+      "sha256": "eb6496dc70225e4c20a26e0691375d7379d324e503a3b906dcf08b413ec6c4db",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/LAYOUT.md": {
+      "sha256": "12d5d48832505fb07949d7c5719630e2aaaed208c4c5918a9974936cdae630b0",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/PIPELINE.md": {
+      "sha256": "0a13de373ce4715d95dee9b941dee705ee6f68bc603a6157829e0155551cd35a",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/PREPARATION_CHECKLIST.md": {
+      "sha256": "d7e3481198c1dbcfb438fbd7b5c6d1f68d5c05a39bdd0720232032a7dab6b82e",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/PROJECT.md": {
+      "sha256": "68ac82b58fc0777fe9999821db0b509f830dfb6ccf714ef88161f9031299211c",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/README.md": {
+      "sha256": "8b5531d997d4b38d30228b469f253edeab81030773591890c42a61ef1ba73e53",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/UPSTREAM-PINS.md": {
+      "sha256": "15cc85a8c7860c56c61931bfad1fd2522bb5cea4395722ecc685974c0ccd9d0e",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/migrations/v0.3.0.py": {
+      "sha256": "5eacd632695dd2d5b1d8011d281f187db442a42c9c338e31659f3b1c2a0e764d",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/migrations/v0.3.1.py": {
+      "sha256": "35e019b91320c6d7f7e4a4ffbccd28970679d3f08e4d59c01a0efed2dd4132f0",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/migrations/v0.5.0.py": {
+      "sha256": "fa85943c054bde21bafb21d16d003dd7b6519ea1033b6d460fbd3dba6a577b22",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/scripts/paper.py": {
+      "sha256": "754c3383a5c1a1d2f720ccb56f8e425c53ae5793014951afaa7b12d87b9445f8",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/scripts/site.py": {
+      "sha256": "fd1c4f236f5fdbe98a60f134a27ca9549ded739fa009ef6092c9d73a1400b8c2",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/site-hook.json": {
+      "sha256": "d2364708f1b4f370f32364a01bc666ec4020f042b234e64479bc243951e06685",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/skeleton/README.md.in": {
+      "sha256": "9ccdc074eb0910a99ff383701bd6880cc6e114c0f7f90c4a0e4c025b15c12613",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/skeleton/book.toml.in": {
+      "sha256": "71b53c2760948671a1339c8cb175d652a845c80b4a4bbcdf2e78a6f968f44ff3",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/skeleton/site.toml.in": {
+      "sha256": "485396596752c5788736dfd3f35d2386650aa8dd5a682a1c3558b928081b418c",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/tests/test_layout.py": {
+      "sha256": "8021642f874472ef0a866f46a30b7899253078593806640543019e610cc2ff5e",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/tests/test_paper.py": {
+      "sha256": "70e233049a5fd729f9fcc2525de2cdaca87cd926a59480245d4e2c52691d8a86",
+      "mode": "100644"
+    },
+    "docs/layer-mathesis/tests/test_site.py": {
+      "sha256": "59aba5d8716bfbff1cec395a20683c728bab2135a5c0e5bf266ba6389a9d2f7b",
+      "mode": "100644"
+    },
+    "skills/layer-mathesis-paper-book/SKILL.md": {
+      "sha256": "a28798a13bb781b8933b19627cd6e8526741f8ef6bc481b6323c83f92130a57c",
+      "mode": "100644"
+    },
+    "skills/layer-mathesis-paper-media/SKILL.md": {
+      "sha256": "273fd07ebb0a1749eb3ff9ebf22a202750e861a9abef8d08b147443f14c34ad5",
+      "mode": "100644"
+    },
+    "skills/layer-mathesis-paper-sync/SKILL.md": {
+      "sha256": "856a986e06c584c2579f1c4faa8e8a2d7a3521eb98b699af3e6ed2deabe24973",
+      "mode": "100644"
+    }
+  }
+}
