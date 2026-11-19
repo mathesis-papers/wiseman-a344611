@@ -2,16 +2,16 @@
   "files": {
     "pdf": {
       "bytes": 106651,
-      "matches_public": null,
+      "matches_public": true,
       "path": "paper.pdf",
-      "public_sha256": null,
+      "public_sha256": "3cca45aae0f5af1a3628f26aae699e67543e40f4c4ea3c02b053e1210dfe390a",
       "sha256": "3cca45aae0f5af1a3628f26aae699e67543e40f4c4ea3c02b053e1210dfe390a"
     },
     "source": {
       "bytes": 21952,
-      "matches_public": null,
+      "matches_public": true,
       "path": "source.archive",
-      "public_sha256": null,
+      "public_sha256": "6160dc89b6d594fae5bf92331393672c531c5b9f742e3bc70eff61a1f0636411",
       "sha256": "6160dc89b6d594fae5bf92331393672c531c5b9f742e3bc70eff61a1f0636411"
     }
   },
@@ -38,6 +38,8 @@
     "license": "CC-BY-4.0",
     "msc": [],
     "pdf": {
+      "bytes": 106651,
+      "sha256": "3cca45aae0f5af1a3628f26aae699e67543e40f4c4ea3c02b053e1210dfe390a",
       "url": "/api/v1/collected-papers/wiseman-a344611/files/pdf?version=2"
     },
     "previous_version": null,
@@ -46,6 +48,8 @@
     "record": "wiseman-a344611",
     "repository_name": "wiseman-a344611",
     "source": {
+      "bytes": 21952,
+      "sha256": "6160dc89b6d594fae5bf92331393672c531c5b9f742e3bc70eff61a1f0636411",
       "url": "/api/v1/collected-papers/wiseman-a344611/files/source?version=2"
     },
     "title": "Strictness and sibling corrections for OEIS A344611, FORMULA, with an alternative derivation of Manyama's (2026) convolution",
